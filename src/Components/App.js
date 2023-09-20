@@ -43,7 +43,7 @@ function App() {
 
         {existingTaskList.length > 0 && <TaskManagerDashboard existingTaskList={existingTaskList}></TaskManagerDashboard>}
 
-        <Modal size="lg" centered show={showSpinner} style={{'background' : 'transparent'}}>
+        <Modal className={'spinner-container'} size="lg" centered show={showSpinner} style={{'background' : 'transparent'}}>
             <Row>
                 <Col md={{ span: 2, offset: 6 }}><Spinner animation="border" variant="primary" size="md" /></Col>
             </Row>
