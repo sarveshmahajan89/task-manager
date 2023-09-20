@@ -1,0 +1,53 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.5.0",
+    "bootstrap": "^5.3.2",
+    "express": "^4.18.2",
+    "font-awesome": "^4.7.0",
+    "light-toast": "^0.3.5",
+    "moment": "^2.29.4",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.2",
+    "node-env-run": "^4.0.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "server": "node-env-run server",
+    "start": "set PORT=3001 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "app-start": "concurrently --kill-others \"npm run start\" \"npm run server\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "node-sass": "^9.0.0"
+  }
+}

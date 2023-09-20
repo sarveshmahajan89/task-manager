@@ -1,0 +1,29 @@
+@import "./Header";
+@import "./Footer";
+@import "./Dashboard";
+@import "./variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/font-awesome/css/font-awesome";
+
+/* Minimal css reset*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

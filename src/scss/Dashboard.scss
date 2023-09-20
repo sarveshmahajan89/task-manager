@@ -1,0 +1,50 @@
+@import "./variables";
+
+
+div.task-dashboard {
+  margin: 20px;
+
+  .progress-container {
+    height: 30px;
+  }
+  Button {
+    margin-right: 10px;
+    &.add-new {
+      i {
+        padding-right: 5px;
+      }
+    }
+  }
+  .align__right {
+    text-align: end;
+  }
+  .toolbar {
+    span {
+      font-weight: bold;
+    }
+  }
+  .card-row {
+    margin: 20px;
+    h5 {
+      color: $white-color;
+      background: $dark-color;
+    }
+    table {
+      transition: all 1s ease-out;
+      td, th {
+        transition: font-size 500ms ease-in-out, padding 500ms ease-in-out;
+
+        .grid-check {
+          input {
+            cursor: pointer;
+          }
+        }
+      }
+      tr {
+        &.selected-row {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
