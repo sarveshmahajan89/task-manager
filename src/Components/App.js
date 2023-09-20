@@ -7,7 +7,7 @@ import {useEffect, useState} from "react";
 import common from "../common";
 import axios from "axios";
 import Toast from "light-toast";
-import {Modal, Spinner} from "react-bootstrap";
+import {Modal, Spinner, Row, Col} from "react-bootstrap";
 
 function App() {
     const [existingTaskList, setExistingTaskList] = useState([]),
@@ -43,8 +43,10 @@ function App() {
 
         {existingTaskList.length > 0 && <TaskManagerDashboard existingTaskList={existingTaskList}></TaskManagerDashboard>}
 
-        <Modal size="sm" show={showSpinner}>
-            <Spinner animation="grow" size="md" />
+        <Modal size="lg" centered show={showSpinner} style={{'background' : 'transparent'}}>
+            <Row>
+                <Col md={{ span: 2, offset: 6 }}><Spinner animation="border" variant="primary" size="md" /></Col>
+            </Row>
         </Modal>
 
         <Footer>
