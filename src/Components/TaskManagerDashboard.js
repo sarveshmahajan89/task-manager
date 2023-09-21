@@ -324,7 +324,7 @@ const TaskManagerDashboard = (props) => {
                                         label="Title"
                                         className="mb-3"
                                     >
-                                        <Form.Control required type="text" placeholder="title" name='title' value={taskInputFieldsVal.title || ''} onChange={handleFormFieldChange} />
+                                        <Form.Control required disabled={isTaskUpdateMode} type="text" placeholder="title" name='title' value={taskInputFieldsVal.title || ''} onChange={handleFormFieldChange} />
                                     </FloatingLabel>
                                 </Col>
                                 <Col xs={6} md={6}>
