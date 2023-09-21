@@ -202,7 +202,7 @@ const TaskManagerDashboard = (props) => {
         <div className={'task-dashboard'}>
             <Container>
                 <Row className={'card-row'}>
-                    <Col md={4}>
+                    <Col md={4} className={'card-col'}>
                         <Card>
                             <Card.Header as="h5">Completion status</Card.Header>
                             <Card.Body>
@@ -211,7 +211,7 @@ const TaskManagerDashboard = (props) => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col md={4}>
+                    <Col md={4} className={'card-col'}>
                         <Card>
                             <Card.Header as="h5">In Progress status</Card.Header>
                             <Card.Body>
@@ -220,7 +220,7 @@ const TaskManagerDashboard = (props) => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col md={4}>
+                    <Col md={4} className={'card-col'}>
                         <Card>
                             <Card.Header as="h5">Open status</Card.Header>
                             <Card.Body>
@@ -237,7 +237,7 @@ const TaskManagerDashboard = (props) => {
                             <Card.Header as="h5">Task list</Card.Header>
                             <Card.Body>
                                 <Row className={'toolbar'}>
-                                    <Col md={4}>
+                                    <Col md={4} className={'toolbar-option'}>
                                         <Button variant="outline-secondary" onClick={handleTaskModalShow} className={'add-new'}><i className="fa fa-plus"></i>New task</Button>
                                     </Col>
                                     <Col md={{ span: 3, offset: 3 }} className={'align__right'}>
@@ -252,7 +252,7 @@ const TaskManagerDashboard = (props) => {
                                             />
                                         </InputGroup>
                                     </Col>
-                                    <Col md={2} className={'align__right'}>
+                                    <Col md={2} className={'toolbar-option align__right'}>
                                         <Button variant="outline-secondary" disabled={selectedRow.length === 0} onClick={handleDeleteClick}><i className="fa fa-trash"></i></Button>
                                     </Col>
                                 </Row>
@@ -295,7 +295,7 @@ const TaskManagerDashboard = (props) => {
                                                     <td>{item.description}</td>
                                                     <td>{item.dewDate}</td>
                                                     <td>
-                                                        <Button variant={getAlertVariant(item.status)}>
+                                                        <Button className="status-btn" variant={getAlertVariant(item.status)}>
                                                             {item.status}
                                                         </Button>
                                                     </td>

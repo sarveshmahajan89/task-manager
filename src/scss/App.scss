@@ -27,6 +27,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+.nav-bar-container {
+  nav {
+    z-index: 1;
+  }
+}
 .spinner-container {
   .modal-content {
     background: transparent;
